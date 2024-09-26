@@ -82,7 +82,6 @@ function App() {
           <h1 className="text-white text-2xl text-right">{state.input || state.result || '0'}</h1>
         </div>
         <div className="grid grid-cols-4 gap-4 p-4">
-          {/* Number buttons */}
           <button onClick={() => handleButtonClick('7')} className="bg-gray-200 p-3 rounded hover:bg-gray-300">7</button>
           <button onClick={() => handleButtonClick('8')} className="bg-gray-200 p-3 rounded hover:bg-gray-300">8</button>
           <button onClick={() => handleButtonClick('9')} className="bg-gray-200 p-3 rounded hover:bg-gray-300">9</button>
@@ -103,7 +102,6 @@ function App() {
           <button onClick={() => handleButtonClick('+')} className="bg-orange-400 p-3 rounded hover:bg-orange-500 text-white">+</button>
           <button onClick={() => handleButtonClick('=')} className="bg-green-500 p-3 rounded hover:bg-green-600 text-white">=</button>
 
-          {/* Memory and advanced function buttons */}
           <button onClick={() => dispatch({ type: 'MEMORY_ADD' })} className="bg-blue-500 p-3 rounded text-white">M+</button>
           <button onClick={() => dispatch({ type: 'MEMORY_SUBTRACT' })} className="bg-blue-500 p-3 rounded text-white">M-</button>
           <button onClick={() => dispatch({ type: 'MEMORY_RECALL' })} className="bg-blue-500 p-3 rounded text-white">MR</button>
