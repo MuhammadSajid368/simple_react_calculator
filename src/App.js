@@ -4,7 +4,6 @@ function App() {
   const [input, setInput] = useState('');
   const [result, setResult] = useState('');
 
-  // Handle button click
   const handleClick = (value) => {
     if (value === '=') {
       calculateResult();
@@ -15,7 +14,7 @@ function App() {
     }
   };
 
-  // Perform the calculation
+  
   const calculateResult = () => {
     try {
       setResult(eval(input));
@@ -24,7 +23,7 @@ function App() {
     }
   };
 
-  // Clear input
+  
   const clearInput = () => {
     setInput('');
     setResult('');
@@ -35,7 +34,7 @@ function App() {
       <div className="w-full max-w-xs bg-white p-6 rounded-lg shadow-lg">
         <h2 className="text-2xl font-bold text-gray-700 text-center mb-4">Simple Calculator</h2>
         
-        {/* Display Area */}
+        
         <div className="mb-4">
           <input
             type="text"
@@ -48,7 +47,7 @@ function App() {
           </div>
         </div>
         
-        {/* Buttons */}
+        
         <div className="grid grid-cols-4 gap-3">
           <button onClick={() => handleClick('1')} className="btn">1</button>
           <button onClick={() => handleClick('2')} className="btn">2</button>
