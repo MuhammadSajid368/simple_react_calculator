@@ -20,7 +20,7 @@ To run this project locally, follow these steps:
 
 ### Prerequisites
 
-- Node.js (version 14 or higher)
+- Node.js (version 20.17.0)
 - npm (Node package manager)
 
 ### Installation
